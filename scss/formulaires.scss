@@ -1,0 +1,364 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+}
+
+/*GENERAL*/
+html {
+  font-size:10px;
+ }
+ body {
+	margin:0;	
+	font-size: 1rem;
+	background-color: #ffe6cc;
+	font-family: "open sans", arial;  
+}
+#conteneur {
+	margin: 50px auto;
+	width: 90%;	
+	font-size: 0;
+	h1 {
+		font-size: 2.5rem;
+	}
+	p {
+		font-size: 1.6rem;
+	}
+	.col {
+		width: 100%;
+		padding: 10px 0%;
+		vertical-align: top;
+	}
+}
+
+
+/*general formulaire*/
+form {
+	max-width: 550px;
+	input, textarea, select {
+	  background-color: #FFFFFF;
+	  color: #454545;
+	  height: 45px;
+	  border: 0;
+	  border-radius: 0;
+	  font-family: "open sans", arial;  
+	  font-size: 1.6rem;
+	  padding: 10px;
+	  width: 100%;
+	  @include placeholder {
+	    color: #454545;
+	    opacity: 1;
+	  }
+	}
+
+	.submit input {
+		cursor: pointer;
+  		color: inherit;
+		border:1px solid #fb9a34;
+		color: #fb9a34;
+		font-size: 1.8rem;
+		transition:300ms all;
+		&:hover {
+			background-color:#fb9a34;
+			color: #ffffff;
+		}
+	}
+	textarea {
+	  width: 100%;
+	  resize: none;
+	  height: 130px;
+
+	}
+
+	select {  
+	  width: 100%;
+	}
+
+	label {
+		line-height: 36px;
+	    vertical-align: top;    
+	    font-size: 1.6rem;
+	}
+	input[type=radio] {
+		width: 50px;
+	}
+} 
+
+/*upload specifique*/
+#conteneur form {
+	input[type="file"] {
+	    position: absolute;
+	    left: -99999rem;
+	}
+
+	.custom-file-upload {
+		background-color: #FFFFFF;
+		color: #454545;
+		height: 45px;
+		border: 0;
+		border-radius: 0;
+		font-family: "open sans", arial;  
+		font-size: 1.6rem;
+		padding: 10px;
+		width: 50%;
+
+	    line-height: 36px;
+	    vertical-align: top;    
+
+	
+	    display: inline-block;
+	    cursor: pointer;
+	    color: #454545;
+	    padding: 0;
+	    line-height: 45px;
+	    text-align: center;
+	}
+	.file {
+		padding:0;
+	}
+	#file-selected {
+		font-size: 1.4rem;
+		text-align: left;
+		padding: 5px 10px;
+		display: inline-block;
+		border-left:1px dotted #454545;
+		background-color: #FFFFFF;
+		width: 50%;
+		height: 45px;
+	}
+}
+
+
+/*messages d'erreurs */
+#conteneur form {
+    .error_msg {
+        padding: 0 2%;  
+        p {
+          display: none;
+          color: #FF0000;
+          font-size: 1.6rem;
+          margin:0;   
+        }    
+    }
+    .error input, .error textarea, .error label, .ext_error label {
+      color: #FF0000;
+    }
+    .error input, .error textarea, .error select, .ext_error label {
+      border:1px solid #FF0000;
+    }
+    .error.mdp_sentence p {
+      color: #FF0000; 
+      font-size: 1.6rem;
+    }  
+}
+
+#conteneur {
+  .soumission {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateX(-50%) translateY(-50%);
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+    p {
+      vertical-align: middle;
+      line-height: normal;
+      display: inline-block;
+      color: #009900;
+      font-size: 1.6rem;
+      margin:0;
+    }
+  }    
+}
+
+
+/*Checkbox*/
+input[type="checkbox"]:not(:checked),
+input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"]:not(:checked) + label,
+input[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* checkbox aspect */
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0; 
+    top: 2px;
+    width: 36px; 
+    height: 36px;       
+    background: #FFF;               
+}
+/* checked mark aspect */
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="checkbox"]:checked + label:after {
+    content: '\2714';
+    position: absolute;
+    top: 0;
+    left: 6px;
+    font-size: 26px;
+    color: #000000;
+    line-height: 1.5;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+/* checked mark aspect changes */
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+/* disabled checkbox */
+input[type="checkbox"]:disabled:not(:checked) + label:before,
+input[type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+input[type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+input[type="checkbox"]:disabled + label {
+    color: #aaa;
+}
+/* accessibility */
+input[type="checkbox"]:checked:focus + label:before,
+input[type="checkbox"]:not(:checked):focus + label:before {
+    border: 1px dotted #000000;
+}
+
+
+
+label.checkbox {
+    line-height: 36px;
+    vertical-align: top;    
+    font-size: 1.6rem;
+}
+
+
+
+/*Button Radio*/
+input[type="radio"]:not(:checked),
+input[type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+input[type="radio"]:not(:checked) + label,
+input[type="radio"]:checked + label {
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* radio aspect */
+input[type="radio"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before {
+    content: '';
+    border-radius:36px;
+    position: absolute;
+    left:0; 
+    top: 2px;
+    width: 36px; 
+    height: 36px;       
+    background: #FFF;
+}
+/* checked mark aspect */
+input[type="radio"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after {
+    content: '';
+    border-radius:36px;
+    position: absolute;
+    left:0; 
+    top: 2px;
+    width: 36px; 
+    height: 36px;       
+    background: #fb9a34;
+
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+/* checked mark aspect changes */
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+/* disabled radio */
+input[type="radio"]:disabled:not(:checked) + label:before,
+input[type="radio"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+input[type="radio"]:disabled:checked + label:after {
+    color: #999;
+}
+input[type="radio"]:disabled + label {
+    color: #aaa;
+}
+/* accessibility */
+input[type="radio"]:checked:focus + label:before,
+input[type="radio"]:not(:checked):focus + label:before {
+    border: 1px dotted #000000;
+}
+
+
+
+label.radio {
+    line-height: 36px;
+    vertical-align: top;    
+    font-size: 1.6rem;
+    margin-right: 5%;
+}
+
+
+/*arrow select*/
+html { 
+	form select {	
+	  /*background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 98% 50% #FFFFFF;*/
+	  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20276.7%20153%22%20enable-background%3D%22new%200%200%20276.7%20153%22%3E%3Cstyle%3E.arrow%7Bfill%3A@{arrow}%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M276.7%200H0l138.2%20153z%22%20%2F%3E%3C%2Fsvg%3E") no-repeat 98% 50% #FFFFFF;
+	  background-size: auto 20%;
+	  -moz-appearance: none; 
+	  -webkit-appearance: none; 
+	  appearance: none;
+	}
+}

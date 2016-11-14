@@ -1,0 +1,140 @@
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Master pour formulaire</title>
+	<link rel="stylesheet" type="text/css" href="css/formulaires.css">	
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+</head>
+
+<script>
+
+</script>
+
+<body>
+	<div id="conteneur" class="strate">
+		<h1>MASTER POUR FORMULAIRE </h1>
+		<form id="form" action="#" method="post" enctype="multipart/form-data" novalidate>
+			<p>Veuillez remplir le formulaire ci-dessous<br/>et nous vous répondrons le plus rapidement possible !</p>
+			<div class="col">
+				<input type="radio" required="required" name="civilite" id="civilite_monsieur" />
+				<label class="radio" for="civilite_monsieur">Monsieur</label>
+				<input type="radio" required="required" name="civilite" id="civilite_madame" />
+				<label class="radio" for="civilite_madame">Madame</label>
+			</div>
+
+			<div class="col cols_33">
+				<label for="nom">Renseignez votre nom* :</label>
+				<input type="text" required="required" placeholder="Nom*" id="nom" name="nom">
+			</div>
+
+			<div class="col cols_33">
+				<input type="text" required="required" placeholder="Prénom*" id="prenom" name="prenom">
+			</div>
+
+			<div class="col cols_33">
+				<input type="email" data-type="email" required="required" placeholder="E-mail*" id="email" name="email">
+			</div>
+			<div class="col error_msg">			
+				<p class="error_email">Veuillez remplir une adresse e-mail correcte</p>
+			</div>
+
+			<div class="col cols_33">
+				<input type="tel" data-type="tel" required="required" placeholder='Téléphone*' id="tel" name="tel"/>				
+			</div>
+			<div class="col error_msg">			
+				<p class="error_telephone">Veuillez remplir un numéro de téléphone correct</p>
+			</div>
+			
+			<div class="col cols_66">
+				<select required="required" id="sujet" name="sujet">
+				<option class="default">Sujet*</option>
+				<option>J'ai oublié mon identifiant</option>
+				<option>Je souhaite contacter le service commercial</option>
+				<option>Je souhaite contacter le service achats</option>
+				<option>Je souhaite contacter le service comptabilité</option>
+				<option>Je souhaite contacter le service logistique</option>
+				<option>Je souhaite déposer ma candidature</option>
+				</select>
+			</div>
+			
+			<div class="col">
+				<input type="text" required="required" name='adresse' placeholder='Adresse*'/>
+			</div>
+			<div class="col">				
+				<input type="text" required="required" name='zipcode' placeholder='Code postal*'/>
+			</div>
+			<div class="col">
+				<input type="text" required="required" name='city' placeholder='Ville*'/>
+			</div>
+			<div class="col">
+					<select class="myselect pays" required name="pays">
+                        <option value="">Pays</option><option value="ALBANIE">ALBANIE</option><option value="ALGERIE">ALGERIE</option><option value="AUSTRALIE">AUSTRALIE</option><option value="AZERBAIDJAN">AZERBAIDJAN</option><option value="BAHREIN">BAHREIN</option><option value="BELGIQUE">BELGIQUE</option><option value="BENIN">BENIN</option><option value="BRASIL">BRASIL</option><option value="BULGARIA">BULGARIA</option><option value="CAMBODIA">CAMBODIA</option><option value="CAMEROUN">CAMEROUN</option><option value="CANADA">CANADA</option><option value="CHINA">CHINA</option><option value="CROATIE">CROATIE</option><option value="CYPRUS">CYPRUS</option><option value="CZECH REPUBLIC">CZECH REPUBLIC</option><option value="DEUTSCHLAND">DEUTSCHLAND</option><option value="EGYPT">EGYPT</option><option value="ENGLAND">ENGLAND</option><option value="ESPAÑA">ESPAÑA</option><option value="FRANCE">FRANCE</option><option value="FRENCH POLYNESIA">FRENCH POLYNESIA</option><option value="GABON">GABON</option><option value="GHANA">GHANA</option><option value="GREECE">GREECE</option><option value="GUADELOUPE">GUADELOUPE</option><option value="GUINEE EQUATORIALE">GUINEE EQUATORIALE</option><option value="GUYANE FRANCAISE">GUYANE FRANCAISE</option><option value="INDIA">INDIA</option><option value="INDONESIA">INDONESIA</option><option value="IRAQ">IRAQ</option><option value="ITALIA">ITALIA</option><option value="JAPAN">JAPAN</option><option value="JORDAN">JORDAN</option><option value="KOSOVO">KOSOVO</option><option value="KUWAIT">KUWAIT</option><option value="LA REUNION">LA REUNION</option><option value="LAOS">LAOS</option><option value="LATVIA">LATVIA</option><option value="LEBANON">LEBANON</option><option value="LUXEMBOURG">LUXEMBOURG</option><option value="MALAYSIA">MALAYSIA</option><option value="MAROC">MAROC</option><option value="MARTINIQUE">MARTINIQUE</option><option value="MAURITANIE">MAURITANIE</option><option value="MEXICO">MEXICO</option><option value="NETHERLANDS">NETHERLANDS</option><option value="NIGERIA">NIGERIA</option><option value="OMAN">OMAN</option><option value="OSTERREICH">OSTERREICH</option><option value="POLAND">POLAND</option><option value="PORTUGAL">PORTUGAL</option><option value="QATAR">QATAR</option><option value="ROMANIA">ROMANIA</option><option value="RUSSIAN FEDERATION">RUSSIAN FEDERATION</option><option value="SAUDI ARABIA">SAUDI ARABIA</option><option value="SERBIA">SERBIA</option><option value="SINGAPORE">SINGAPORE</option><option value="SLOVAKIA">SLOVAKIA</option><option value="SUDAN">SUDAN</option><option value="SUISSE">SUISSE</option><option value="SYRIA">SYRIA</option><option value="THAILAND">THAILAND</option><option value="TUNISIE">TUNISIE</option><option value="TȔRKEI">TȔRKEI</option><option value="UKRAINE">UKRAINE</option><option value="UNITED ARAB EMIRATES">UNITED ARAB EMIRATES</option><option value="UNITED KINGDOM">UNITED KINGDOM</option><option value="UNITED STATES">UNITED STATES</option><option value="VIET NAM">VIET NAM</option><option value="YEMEN">YEMEN</option>
+                    </select>
+			</div>
+			<div class="col">
+				<textarea required="required" placeholder="Votre message*" id="message" name="message"></textarea>
+			</div>
+
+			<div class="col cols_33">
+				<p>Si vous le souhaitez, vous pouvez joindre un fichier à votre demande</p>
+				<label for="file-upload" class="custom-file-upload">Joindre un fichier</label>
+				<input id="file-upload" type="file" placeholder="Joindre un fichier" accept=".pdf, .doc, .docx, .zip" id="file" name="file">
+				<span id="file-selected"></span>
+			</div>
+
+			<div class="col error_msg">
+				<p class="error_message_file">Le fichier ne doit pas dépasser 5Mo. Merci</p>
+			</div>
+			<div class="col error_msg">
+				<p class="error_message_extension">Le fichier doit être un .doc, .docx, .pdf ou .zip Merci</p>
+			</div>
+
+			<div class="col cols_50">
+				<input type="password" id="password" name="password" required="required" placeholder="Créez un mot de passe*">
+			</div>
+			<div class="col cols_50">
+				<input type="password" id="confirmPwd" name="confirm" required="required" placeholder="Confirmez votre mot de passe*">
+			</div>
+			<div class="col mdp_sentence">
+				<p>Le mot de passe doit être composé d'au moins 6 caractères et contenir au moins un chiffre et une lettre</p>
+			</div>
+			<div class="col error_msg">			
+				<p class="error_message_same_password">Les deux champs mot de passe ne sont pas identiques</p>
+			</div>
+
+
+			<div class="col">
+				<input type="checkbox" id="cgv_check" required="required" />
+				<label class="checkbox" for="cgv_check">J'accepte les conditions générales.</label>
+			</div>			
+			<input type="hidden" name="action" value="send_contact_form"/>
+			<input type="hidden" id="submit_type" name="submit_type" value="jquery"/>
+			<br/>
+			<div class="col submit">
+				<input class="btn" type="submit" value="valider" name="valider">
+			</div>			
+		</form>
+		<div class="soumission">
+			<p>Votre demande a bien été envoyée,<br/>
+			Nous vous répondrons le plus rapidement possible,<br/>
+			Merci,<br/>
+			L'équipe Automotor</p>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="js/css_browser_selector.min.js"></script>
+<script type="text/javascript" src="js/master_formulaire.js"></script>
+
+
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var projectajaxqueries = {"ajaxurl":"admin-ajax.php"};
+    /* ]]> */
+</script>
+
+
+</body>
+</html>
+

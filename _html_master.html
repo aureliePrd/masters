@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Titre de la page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <!--
+  /* librairie jquery (via wordpress) dans le header + css main + wp_head */
+  <?php    
+      wp_enqueue_script('jquery');
+      wp_enqueue_style('project-main-css', TEMPLATEURL . '/prod/css/main.css');
+      wp_head();
+  ?>
+  -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+  <script>
+  /* fix ie 9 and console log */ 
+  if(!window.console) {
+    var console = {
+      log : function(){},
+      info : function(){},
+      warn : function(){},
+      error : function(){},
+      time : function(){},
+      timeEnd : function(){}
+    }
+  }
+  </script>
+
+  <!--[if lte IE 9]> 
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <script src="<?php echo find_lib_javascript('respond.min.js'); ?>"></script>
+      <script src="<?php echo find_lib_javascript('placeholders.min.js'); ?>"></script>
+  <![endif]-->
+
+</head>
+
+<script>
+
+</script>
+
+<style>
+
+</style>
+
+<body>
+  <a href="//google.github.io/styleguide/htmlcssguide.xml" target="_blank" title="Google">Ouvre page Google sans les HTTP: ou HTTPS:</a>
+  <br/><br/>
+  <img src="image/marchepas" alt="toujours prévoir une alternative à une image"/>
+  <br/><br/>
+  Préférer écrire directement € plutôt que &ldquo;&eur;&rdquo;
+ 
+  <!-- TODO: tous les commentaires avec "TODO" pour savoir qu'il faut faire ça et ça -->
+
+
+<script data-main="js/main_test_require.js" src="js/require.min.2.3.2.js"></script>
+
+</body>
+</html>
