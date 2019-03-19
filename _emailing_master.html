@@ -6,10 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<script>
-
-</script>
-
 <style>
 
 /*Vous devez développer vos propriétés CSS. Définissez toutes vos valeurs, ne comptez pas sur les valeurs par défaut. */
@@ -29,65 +25,65 @@ img {display:block;}
 </style>
 
 <body>
-	<table>
+	<table cellspacing="0" cellpadding="0" border="0" width="100%">
 		<tr>
 			<td>Pour optimiser au mieux l’affichage de la couleur d’arrière-plan, il est recommandé de définir la couleur d’arrière-plan dans un tableau séparé enveloppant tout votre template de mail (tableau principal). Définissez pour ce tableau une largeur de 100%.</td>
 		</tr>
 		<tr>
-			<td bgcolor=”#000000”>
+			<td bgcolor="#f2f2f2">
+				<h1><a href="https://www.lafabriquedunet.fr/email-marketing/guide/coder-email-html-css/">https://www.lafabriquedunet.fr/email-marketing/guide/coder-email-html-css/</a></h1>
+
+				<img src="img/image.jpg" alt="BIEN REMPLIR">
+				<h2>Mettre le CSS en inline & développer les propriétés CSS</h2>
+				<p style="font-size: 15px; font-weight: bold; font-family: arial, times, serif">paragraphe stylisé avec css inline</p>
 				
+				<table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+						<td>Structurer l’HTML de l’email par des tableaux</td>
+					</tr>
+					<tr>
+						<td bgcolor="#000000">TEXTE</td>
+					</tr>
+					<tr>
+						<td align="right">align plutot que float</td>
+					</tr>
+					<tr>
+						<td>eviter balises tbody, rowspan, colspan...</td>
+					</tr>
+					<tr>
+						<td width="200" style="font-weight:bold; font-size:1em; line-height:1.2em; font-family:georgia,'times',serif;">Pour bien faire ressortir les textes clés de votre email, intégrez ces textes en inline dans la cellule concernée. Evitez la balise < p ></td>
+					</tr>
+				</table>
+
+				<p>Enfin, pour les marges évitez d’utiliser la balise < br / > ou les balises div dans votre CSS.</p>
+
+				<h3>IMAGES</h3>
+				<table>
+					<tr>
+						<td>IMAGES</td>
+					</tr>
+					<tr>
+						<td>Evitez les images d’espacement genre spacer.gif</td>
+					</tr>
+					<tr>
+						<td>N’utilisez pas de format PNG</td>
+					</tr>
+					<tr>
+						<td>Incluez toujours les dimensions de vos images</td>
+					</tr>
+					<tr>
+						<td>N’oubliez pas la balise alt</td>
+					</tr>
+				</table>
+				
+
+
+				<p>LIEN DESINSCRIPTION</p>
 			</td>
 		</tr>
 	</table>
 
-	<h1><a href="https://www.lafabriquedunet.fr/email-marketing/guide/coder-email-html-css/">https://www.lafabriquedunet.fr/email-marketing/guide/coder-email-html-css/</a></h1>
 
-	<img src="" alt="BIEN REMPLIR">
-	<h2>Mettre le CSS en inline & développer les propriétés CSS</h2>
-	<p style="font-size: 15px; font-weight: bold; font-family: arial, times, serif">paragraphe stylisé avec css inline</p>
-	
-	<table cellspacing="0" cellpadding="0" border="0" width="100%">
-		<tr>
-			<td>Structurer l’HTML de l’email par des tableaux</td>
-		</tr>
-		<tr>
-			<td bgcolor=”#000000”>TEXTE</td>
-		</tr>
-		<tr>
-			<td align=”right”>align plutot aue float</td>
-		</tr>
-		<tr>
-			<td>eviter balises tbody, rowspan, colspan...</td>
-		</tr>
-		<tr>
-			<td width="200" style="font-weight:bold; font-size:1em; line-height:1.2em; font-family:georgia,'times',serif;">Pour bien faire ressortir les textes clés de votre email, intégrez ces textes en inline dans la cellule concernée. Evitez la balise < p ></td>
-		</tr>
-	</table>
-
-	<p>Enfin, pour les marges évitez d’utiliser la balise < br / > ou les balises div dans votre CSS.</p>
-
-	<h3>IMAGES</h3>
-	<table>
-		<tr>
-			<td>IMAGES</td>
-		</tr>
-		<tr>
-			<td>Evitez les images d’espacement genre spacer.gif</td>
-		</tr>
-		<tr>
-			<td>N’utilisez pas de format PNG</td>
-		</tr>
-		<tr>
-			<td>Incluez toujours les dimensions de vos images</td>
-		</tr>
-		<tr>
-			<td>N’oubliez pas la balise alt</td>
-		</tr>
-	</table>
-	
-
-
-	<p>LIEN DESINSCRIPTION</p>
 </body>
 
 </html>
