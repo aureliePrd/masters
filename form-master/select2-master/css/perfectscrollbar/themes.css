@@ -1,0 +1,63 @@
+/*
+Error: Undefined variable: "$ps-border-radius".
+        on line 2 of /Users/zentir13/Local Sites/github_aurelie/masters/scss/perfectscrollbar/themes.scss
+
+1: $ps-theme-default: (
+2:   border-radius: $ps-border-radius,
+3:   rail-default-opacity: $ps-rail-default-opacity,
+4:   rail-container-hover-opacity: $ps-rail-container-hover-opacity,
+5:   rail-hover-opacity: $ps-rail-hover-opacity,
+6:   bar-bg: $ps-bar-bg,
+7:   bar-container-hover-bg: $ps-bar-container-hover-bg,
+
+Backtrace:
+/Users/zentir13/Local Sites/github_aurelie/masters/scss/perfectscrollbar/themes.scss:2
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/script/tree/map_literal.rb:53:in `block in _perform'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/script/tree/map_literal.rb:52:in `map'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/script/tree/map_literal.rb:52:in `_perform'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:472:in `visit_variable'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/zentir13/.rvm/gems/ruby-2.5.3@global/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Users/zentir13/.rvm/gems/ruby-2.5.3@global/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/bin/compass:23:in `load'
+/Users/zentir13/.rvm/rubies/ruby-2.5.3/bin/compass:23:in `<main>'
+/Users/zentir13/.rvm/gems/ruby-2.5.3@global/bin/ruby_executable_hooks:24:in `eval'
+/Users/zentir13/.rvm/gems/ruby-2.5.3@global/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$ps-border-radius\".\A         on line 2 of /Users/zentir13/Local Sites/github_aurelie/masters/scss/perfectscrollbar/themes.scss\A \A 1: $ps-theme-default: (\A 2:   border-radius: $ps-border-radius,\A 3:   rail-default-opacity: $ps-rail-default-opacity,\A 4:   rail-container-hover-opacity: $ps-rail-container-hover-opacity,\A 5:   rail-hover-opacity: $ps-rail-hover-opacity,\A 6:   bar-bg: $ps-bar-bg,\A 7:   bar-container-hover-bg: $ps-bar-container-hover-bg,"; }
